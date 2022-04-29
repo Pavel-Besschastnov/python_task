@@ -6,7 +6,7 @@ import math
 pi = math.pi
 print('Число пи = ',pi)
 d = 0.00001
-print(f'Точность ={d}')
+print(f'Точность = {d}')
 count = 0
 while d < 1:
     count += 1
