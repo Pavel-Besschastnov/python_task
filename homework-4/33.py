@@ -20,3 +20,6 @@ for i in reversed(range(k)):
         s = s + str(spi[i])+ '*x**' + str(i) + '+'
 
 print(s)
+with open('text.txt','w') as f:
+    f.write(s)
+
