@@ -13,13 +13,12 @@ for i in range(k):
 print('Список коэфициентов : \n ',spi)
 s =str('')
 for i in reversed(range(k)):
-    print(i)
     if i == 0: s = s + '+' +  str(spi[i])
     elif i == 1: s = s + str(spi[i]) + '*x'
     else: 
         s = s + str(spi[i])+ '*x**' + str(i) + '+'
 
-print(s)
+print('Сформирован многочлен: \n',s)
 with open('text.txt','w') as f:
     f.write(s)
 
