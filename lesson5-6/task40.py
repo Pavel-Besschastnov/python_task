@@ -9,6 +9,7 @@ X = "X"
 for i in range(0, 3):
     print(f' {d[i*3]} {d[i*3+1]} {d[i*3+2]}')  # Рисуем табличку
 while count < 9:
+    if count2 > 0: break
     t = "Крестика " if X == "X" else "Нолика "
     while True:  # Проверяем правильно ли введено число
         n = int(input(f'Введите число ячейки для {t}'))
@@ -24,8 +25,6 @@ while count < 9:
     X = "X" if X != "X" else "O"
     r = ""
     for i in range(0, 2):  # Проверка линий на совпадение
-        #if count2 > 0:
-        #    break
         if d[3 * i] == d[3 * i + 1] and d[3 * i + 1] == d[3 * i + 2]:
             r = d[3 * i]
         elif d[i] == d[3 + i] and d[3 + i] == d[6 + i]:
