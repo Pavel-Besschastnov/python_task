@@ -4,10 +4,13 @@
 
 N = int(input("Введите любое положительное число :"))
 #while N ==
-list = []
+sp = []
 v = int(1)  # временная переменная
 for i in range(1, N + 1):
-    list.append(v)
+    sp.append(v)
     v = v * (-3)
 
-print(list)
+print(sp)
+
+newN = [x * -3 for x in range(N)]
+print(newN)
