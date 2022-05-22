@@ -4,13 +4,13 @@
 
 N = int(input("Введите любое положительное число :"))
 #while N ==
-sp = []
-v = int(1)  # временная переменная
-for i in range(1, N + 1):
-    sp.append(v)
-    v = v * (-3)
+# sp = []
+# # v = int(1)  # временная переменная
+# # for i in range(1, N + 1):
+# #     sp.append(v)
+# #     v = v * (-3)
 
-print(sp)
+# print(sp)
 
-newN = [x * -3 for x in range(N)]
-print(newN)
+spis = [((-3)**i) for i in range(N)]
+print(spis)
