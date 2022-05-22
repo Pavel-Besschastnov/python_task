@@ -4,7 +4,7 @@
 import random
 import os
 
-d = int(input("Введите количество чисел в списке :"))
+d = 10  #int(input("Введите количество чисел в списке :"))
 # list = []
 # for i in range(d):
 #     list.append(random.randint(-d, d))
@@ -29,3 +29,17 @@ d = int(input("Введите количество чисел в списке :"
 
 # f.close()
 # print(f'произведение элементов : {count}')
+firsttext = [i for i in range(-d, d + 1)]
+print(firsttext)
+pos = [random.randint(0, d) for i in range(int(d / 3))]
+print(f'Следующие индексы будут записаны в файл: {pos}')
+with open('firsttext.txt', 'w') as f1:
+    for i in range(len(pos)):
+        f1.writelines(str(pos[i]) + '\n')
+
+with open('firsttext.txt') as f1:
+    fin = list(f1.readlines())
+x = 1
+for i in range(len(fin)):
+    x = x * int(fin[i])
+print(f'Произведения элементов по указанным индексам = {x}')
