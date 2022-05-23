@@ -3,6 +3,7 @@ import read_export
 import hor_table
 import vert_table
 import tel_info
+import log
 
 
 def start():
