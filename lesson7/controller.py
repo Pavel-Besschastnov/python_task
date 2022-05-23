@@ -17,18 +17,18 @@ def start():
         break
     if reg == 1:
         a, b, c, d = tel_info.telef()
-        vert_table.vert(a, b, c, d)
+        hor_table.hor(a, b, c, d)
     elif reg == 2:
         a, b, c, d = tel_info.telef()
-        hor_table.hor(a, b, c, d)
+        vert_table.vert(a, b, c, d)
     elif reg == 3:
-        read_export.read_exp()
+        read_export.read_exp_H()
         ex = input('Желаете экспортировать данные? ( y/n ) : ')
-        if ex == 'y':read_export.read_exp()
+        if ex == 'y':read_export.export_H()
     elif reg == 4:
-        read_export.read_exp()
+        read_export.read_exp_V()
         ex = input('Желаете экспортировать данные? ( y/n ) : ')
-        if ex == 'y':read_export.read_exp()
+        if ex == 'y':read_export.export_V()
 
 
 
@@ -38,4 +38,3 @@ def start():
 
         
 
-start()
