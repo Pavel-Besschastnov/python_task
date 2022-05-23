@@ -1,7 +1,7 @@
 import csv
 
 
-def export_H():
+def read_exp():
     with open('horizont_table.csv') as csv.file:
         csv_reader = csv.reader(csv.file, delimiter=',')
         line_count = 0
@@ -14,4 +14,4 @@ def export_H():
         print(f'Обработано {line_count} строки.')
 
 
-export_H()
+
