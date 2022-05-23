@@ -1,7 +1,7 @@
 import os
 
 
-def tel_info():
+def telef():
     global a
     global b
     global c

@@ -1,9 +1,8 @@
 import os
-import export
 import hor_table
 import vert_table
 import tel_info
 
 
-tel_info()
-hor_table(a, b, c, d)
+a, b, c, d = tel_info.telef()
+hor_table.hor(a, b, c, d)
