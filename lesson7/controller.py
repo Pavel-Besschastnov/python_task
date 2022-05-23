@@ -23,6 +23,19 @@ def start():
         hor_table.hor(a, b, c, d)
     elif reg == 3:
         read_export.read_exp()
+        ex = input('Желаете экспортировать данные? ( y/n ) : ')
+        if ex == 'y':read_export.read_exp()
+    elif reg == 4:
+        read_export.read_exp()
+        ex = input('Желаете экспортировать данные? ( y/n ) : ')
+        if ex == 'y':read_export.read_exp()
 
+
+
+        
+        
+        
+
+        
 
 start()
