@@ -7,8 +7,5 @@ def hor_table(a, b, c, d):
         horizont_writer.writerow([a, b, c, d])
 
 
-a = 'sdsd'
-b = 'sdad'
-c = 'ss'
-d = 'saasdsafsf'
-hor_table(a, b, c, d)
+
+

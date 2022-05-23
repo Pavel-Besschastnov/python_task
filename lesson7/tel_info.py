@@ -10,3 +10,6 @@ def tel_info():
     b = input('Введите имя :')
     c = input('Введите телефон : ')
     d = input('Добавьте заметку :')
+    return a,b,c,d
+
+
