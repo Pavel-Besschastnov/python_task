@@ -8,11 +8,12 @@ import log
 def vert(a, b, c, d):
     with open('vertical_table.csv', 'a', newline='') as vertical_table:
         spisok = list([a,b,c,d])
+        log.log_to_file(a,b,c,d)
         vertical_writer = csv.writer(vertical_table,lineterminator='\n')
         for var in spisok:
             vertical_writer.writerow([var])
         vertical_table.writelines('\n')
-        log.log_to_file(a,b,c,d)
+        
 
 
 
