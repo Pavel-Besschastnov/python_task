@@ -11,6 +11,6 @@ def run():
         print(*get_data())
         db_operations()
     elif choice == 2:
-        db.get_new_data()
+        db.add_data()
     else:
         print('Ошибка ввода!')

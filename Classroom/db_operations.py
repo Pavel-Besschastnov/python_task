@@ -1,35 +1,4 @@
 
-def get_base():
-    with open('pupils.csv', 'r') as pupils_file:
-        pupils = [pupil.replace('\n', '').split(';') for pupil in pupils_file]
-    with open('adress.csv', 'r') as adress_file:
-        adress = [adress.replace('\n', '').split(';')
-                  for adress in adress_file]
-    with open('cabinets.csv', 'r') as cabinets_file:
-        cabinetes = [cabinet.replace('\n', '').split(';')
-                     for cabinet in cabinets_file]
-    return [pupils, adress, cabinetes]
-
-
-def get_new_data():
-    result_list = get_data()
-    id = int(len(result_list))
-    string = ''
-    string += str(id)+';'      # list[0] - это Id ученика)
-    string += input('Введите Фамилию: ')+';'
-    string += input('Введите Имя: ')+';'
-    string += input('Введите Класс: ')+';'
-    string += input('Введите Статус: ')+';'
-    string += input('Введите Ряд: ')+';'
-    string += input('Введите Номер парты: ')+';'
-    string += input('Введите Город: ') + ';'
-    string += input('Введите Улицу: ')+';'
-    string += input('Введите Дом: ')+';'
-    string += input('Введите Квартира: ')+';'
-    string += input('Введите Примечание: ')+';'
-    print('Добавляем ученика: ', string)
-    push_data(string)
-
 
 def summa(a):
     result = ''
@@ -42,8 +11,8 @@ def get_data():
     with open('name.csv', 'r') as name:
         name = name.readlines()
 
-    with open('class.csv', 'r') as classe:
-        classe = classe.readlines()
+    with open('cabinet.csv', 'r') as cab:
+        clab = clab.readlines()
 
     with open('adress.csv', 'r') as adress:
         adress = adress.readlines()
