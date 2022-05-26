@@ -1,6 +1,6 @@
 
-from get_push_data import get_data
-from get_push_data import push_data
+from db_operations import get_data
+from db_operations import push_data
 
 
 def add_data():
