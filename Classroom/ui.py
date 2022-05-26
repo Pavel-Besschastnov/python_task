@@ -15,10 +15,3 @@ def get_choice(comand_line):
     return int(inp)
 
 
-def get_look(db):
-    print(db[0], db[1], db[2])
-    [print(f'{" ".join(data[0])} {" ".join(data[1])} {" ".join(data[2])}')
-     for data in db]
-
-    #    with open('people.csv') as db:
-    #    [print(line.replace('\n','')) for line in db
