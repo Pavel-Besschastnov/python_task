@@ -1,6 +1,6 @@
 # https://all-python.ru/primery/krestiki-noliki.html
 import os
-import tkinter
+from tkinter import *
 import random
 
 root = Tk()
