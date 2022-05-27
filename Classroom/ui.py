@@ -1,17 +1,14 @@
 
-def get_choice(comand_line):
-    comands_list = comand_line.split(';')
-    comands = enumerate(comands_list, 1)
+
+def get_choice():
+
     print('\nВведите число, соответствующее номеру пункта меню')
-    error = True
-    while error:
-        greatings = ', '.join([f'{x[0]}:{x[1]}' for x in comands])
-        print(f'{greatings}')
-        inp = input()
-        if inp.isdigit() and 0 < int(inp) and int(inp) < len(comands_list)+1:
-            error = False
-        else:
+    print('Что хотите сделать?')
+    print('1 Показать справочник \n2 Внести новую запись\n3 Выход!')
+    while True:
+        global x
+        x = int(input('введите число :'))
+        if x < 0 or x > 3:
             print("Вы ввели неверное значение. Повторите ввод")
-    return int(inp)
-
-
+            continue
+        return x

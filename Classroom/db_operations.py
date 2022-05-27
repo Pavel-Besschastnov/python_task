@@ -1,4 +1,6 @@
-
+from calendar import c
+from itertools import zip_longest
+from unittest import result
 
 def summa(a):
     result = ''
