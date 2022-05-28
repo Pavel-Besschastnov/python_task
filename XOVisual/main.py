@@ -1,3 +1,4 @@
-import controller as con
+import controller
 
-con.run()
+
+controller.run()
