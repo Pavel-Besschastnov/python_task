@@ -56,6 +56,9 @@ def callback_func(query):
             value = str(eval(value))
         except:
             value = "Ошибка!"
+    elif data == '<=':
+        if value != '':
+            value = value[:len(value)-1]
     else:
         value += data
 
