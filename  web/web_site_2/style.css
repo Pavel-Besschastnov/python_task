@@ -1,0 +1,31 @@
+.conteiner_head {
+   background-color: darkgray;
+    width: auto;
+    margin: auto;
+    height:50px;
+}
+
+.main {
+    color: rgb(24, 18, 18);
+    position: top;
+    margin-left: 200px;
+}
+
+.par {
+    color: chartreuse;
+    margin-left: 300px;
+    margin-right: 300px;
+    width: auto;
+}
+
+.ven {
+    width: 1000px;
+    margin-right: 200px;
+    position: right;
+}
+
+.conteiner_body {
+
+    width: 1200px;
+    margin: 0 auto;
+}
