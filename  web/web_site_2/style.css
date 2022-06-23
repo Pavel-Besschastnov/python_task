@@ -1,8 +1,8 @@
 .conteiner_head {
-   background-color: darkgray;
+    background-color: darkgray;
     width: auto;
     margin: auto;
-    height:50px;
+    height: 50px;
 }
 
 .main {
@@ -12,7 +12,6 @@
 }
 
 .par {
-    color: chartreuse;
     margin-left: 300px;
     margin-right: 300px;
     width: auto;
@@ -26,6 +25,28 @@
 
 .conteiner_body {
 
-    width: 1200px;
-    margin: 0 auto;
+    width: 1000px;
+    margin: auto;
+}
+
+H2 {
+    text-align: center
+}
+
+img {
+    float: left;
+    border-radius: 100%;
+}
+
+.conteiner_foot {
+    background-color: rgb(53, 49, 49);
+    width: auto;
+    margin: auto;
+    height: 50px;
+}
+
+.pravo {
+    color: azure;
+    margin-left: 600px;
+    border-top: 6em;
 }
